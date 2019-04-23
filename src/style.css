@@ -18,3 +18,15 @@ p {
 body {
     background-color: #a5a9b1;
 }
+
+label {
+    display: block; 
+    margin-bottom: 10px;
+}
+
+input{
+    margin-bottom: 20px;
+    height: 20px;
+    width: 250px;
+    font-size: 1.1em;
+}
