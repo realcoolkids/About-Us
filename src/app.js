@@ -16,7 +16,7 @@ submitButton.addEventListener('click', () => {
     
     let scoreEl = document.getElementById('score');
     
-    if(jacksAnswer.trim() === '' || denisesAnswer.trim() === '' || erinsAnswer.trim() === '' || leighAnnsAnswer.trim() === "") {
+    if(jacksAnswer.trim() === '' || denisesAnswer.trim() === '' || erinsAnswer.trim() === '' || leighAnnsAnswer.trim() === '') {
         scoreEl.textContent = 'Please fill out all options.';
     } else {
         score = quizScore(jacksAnswer, denisesAnswer, erinsAnswer, leighAnnsAnswer);
