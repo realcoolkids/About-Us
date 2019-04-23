@@ -29,6 +29,6 @@ submitButton.addEventListener('click', () => {
         }
 
     
-        scoreEl.textContent = 'Your score: ' + score;
+        scoreEl.textContent = 'Your score: ' + score + 'Your percentage: ' + (score / 4) + '%';
     }
 }); 
