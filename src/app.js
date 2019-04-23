@@ -1,8 +1,16 @@
 const submitButton = document.getElementById('submit');
 
 
-const jacksAnswer = document.getElementById('jacks-favorite-thing');
-const denisesAnswer = document.getElementById('denises-favorite-thing');
-const erinsAnswer = document.getElementById('erins-favorite-thing');
-const leighAnnAnswer = document.getElementById('leigh-anns-favorite-thing');
-console.log(submitButton, jacksAnswer, denisesAnswer, erinsAnswer, leighAnnAnswer);
+const jacksInput = document.getElementById('jacks-favorite-thing');
+const denisesInput = document.getElementById('denises-favorite-thing');
+const erinsInput = document.getElementById('erins-favorite-thing');
+const leighAnnsInput = document.getElementById('leigh-anns-favorite-thing');
+// console.log(submitButton, jacksAnswer, denisesAnswer, erinsAnswer, leighAnnAnswer);
+
+submitButton.addEventListener("click",() => {
+    const jacksAnswer = jacksInput.value;
+    const denisesAnswer = denisesInput.value;
+    const erinsAnswer = erinsInput.value;
+    const leighAnnsAnswer = leighAnnsInput.value;
+    console.log(jacksAnswer, denisesAnswer, erinsAnswer, leighAnnsAnswer)
+}) 
