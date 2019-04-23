@@ -13,11 +13,14 @@ submitButton.addEventListener("click",() => {
     const denisesAnswer = denisesInput.value;
     const erinsAnswer = erinsInput.value;
     const leighAnnsAnswer = leighAnnsInput.value;
-
-    const score = quizScore(jacksAnswer, denisesAnswer, erinsAnswer, leighAnnsAnswer);
-
+    
     let scoreEl = document.getElementById("score")
-    scoreEl.textContent = "Your score: " + score;
+    
+    if(jacksAnswer.trim() === "" || denisesAnswer.trim() === "" || erinsAnswer.trim() === "" || leighAnnsAnswer.trim() === ""){
+        scoreEl.textContent = "Please fill out all options.";
+    } else {
+        const score = quizScore(jacksAnswer, denisesAnswer, erinsAnswer, leighAnnsAnswer);
 
-    console.log(scoreEl)
+        scoreEl.textContent = "Your score: " + score;
+    }
 }) 
