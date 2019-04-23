@@ -3,6 +3,11 @@ const test = QUnit.test;
 function quizScore(jacksAnswer, denisesAnswer, erinsAnswer, leighAnnsAnswer) {
     let score = 0;
 
+    jacksAnswer = jacksAnswer.toLowerCase();
+    denisesAnswer = denisesAnswer.toLowerCase();
+    erinsAnswer = erinsAnswer.toLowerCase();
+    leighAnnsAnswer = leighAnnsAnswer.toLowerCase();
+
     if(jacksAnswer === "waterskiing" || jacksAnswer === "lacrosse" || jacksAnswer === "hockey"){
         score++;
     }
@@ -81,6 +86,40 @@ test('All entrys are correct as third favorite expecting 4', function(assert) {
     const erinsAnswer = "nature";
     const leighAnnsAnswer = "podcasts";
     const expected = 4;
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const score = quizScore(jacksAnswer, denisesAnswer, erinsAnswer, leighAnnsAnswer);
+
+    //Assert
+    assert.equal(score, expected);
+});
+
+test('All entrys are correct with uppercase expecting 4', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const jacksAnswer = "Hockey";
+    const denisesAnswer = "Swimming";
+    const erinsAnswer = "Nature";
+    const leighAnnsAnswer = "Podcasts";
+    const expected = 4;
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const score = quizScore(jacksAnswer, denisesAnswer, erinsAnswer, leighAnnsAnswer);
+
+    //Assert
+    assert.equal(score, expected);
+});
+
+test('One is correct with others rearranged expecting one', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const jacksAnswer = "Hockey";
+    const denisesAnswer = "nature";
+    const erinsAnswer = "puppies";
+    const leighAnnsAnswer = "Lacrosse";
+    const expected = 1;
 
     //Act 
     // Call the function you're testing and set the result to a const
