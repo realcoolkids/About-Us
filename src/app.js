@@ -6,7 +6,6 @@ const jacksInput = document.getElementById('jacks-favorite-thing');
 const denisesInput = document.getElementById('denises-favorite-thing');
 const erinsInput = document.getElementById('erins-favorite-thing');
 const leighAnnsInput = document.getElementById('leigh-anns-favorite-thing');
-// console.log(submitButton, jacksAnswer, denisesAnswer, erinsAnswer, leighAnnAnswer);
 
 submitButton.addEventListener("click",() => {
     const jacksAnswer = jacksInput.value;
