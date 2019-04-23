@@ -1,13 +1,13 @@
-import quizScore from "../src/quizScore.js"
+import quizScore from '../src/quizScore.js';
 const test = QUnit.test;
 
 test('All entrys are wrong expecting 0', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const jacksAnswer = "lsjkdf";
-    const denisesAnswer = "cat";
-    const erinsAnswer = "dog";
-    const leighAnnsAnswer = "mouse";
+    const jacksAnswer = 'lsjkdf';
+    const denisesAnswer = 'cat';
+    const erinsAnswer = 'dog';
+    const leighAnnsAnswer = 'mouse';
     const expected = 0;
 
     //Act 
@@ -21,10 +21,10 @@ test('All entrys are wrong expecting 0', function(assert) {
 test('All entrys are correct as top favorite expecting 4', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const jacksAnswer = "waterskiing";
-    const denisesAnswer = "tacos";
-    const erinsAnswer = "poetry";
-    const leighAnnsAnswer = "eurovision";
+    const jacksAnswer = 'waterskiing';
+    const denisesAnswer = 'tacos';
+    const erinsAnswer = 'poetry';
+    const leighAnnsAnswer = 'eurovision';
     const expected = 4;
 
     //Act 
@@ -38,10 +38,10 @@ test('All entrys are correct as top favorite expecting 4', function(assert) {
 test('All entrys are correct as second favorite expecting 4', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const jacksAnswer = "lacrosse";
-    const denisesAnswer = "running";
-    const erinsAnswer = "traveling";
-    const leighAnnsAnswer = "puppies";
+    const jacksAnswer = 'lacrosse';
+    const denisesAnswer = 'running';
+    const erinsAnswer = 'traveling';
+    const leighAnnsAnswer = 'puppies';
     const expected = 4;
 
     //Act 
@@ -55,10 +55,10 @@ test('All entrys are correct as second favorite expecting 4', function(assert) {
 test('All entrys are correct as third favorite expecting 4', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const jacksAnswer = "hockey";
-    const denisesAnswer = "swimming";
-    const erinsAnswer = "nature";
-    const leighAnnsAnswer = "podcasts";
+    const jacksAnswer = 'hockey';
+    const denisesAnswer = 'swimming';
+    const erinsAnswer = 'nature';
+    const leighAnnsAnswer = 'podcasts';
     const expected = 4;
 
     //Act 
@@ -72,10 +72,10 @@ test('All entrys are correct as third favorite expecting 4', function(assert) {
 test('All entrys are correct with uppercase expecting 4', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const jacksAnswer = "Hockey";
-    const denisesAnswer = "Swimming";
-    const erinsAnswer = "Nature";
-    const leighAnnsAnswer = "Podcasts";
+    const jacksAnswer = 'Hockey';
+    const denisesAnswer = 'Swimming';
+    const erinsAnswer = 'Nature';
+    const leighAnnsAnswer = 'Podcasts';
     const expected = 4;
 
     //Act 
@@ -89,10 +89,10 @@ test('All entrys are correct with uppercase expecting 4', function(assert) {
 test('One is correct with others rearranged expecting one', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const jacksAnswer = "Hockey";
-    const denisesAnswer = "nature";
-    const erinsAnswer = "puppies";
-    const leighAnnsAnswer = "Lacrosse";
+    const jacksAnswer = 'Hockey';
+    const denisesAnswer = 'nature';
+    const erinsAnswer = 'puppies';
+    const leighAnnsAnswer = 'Lacrosse';
     const expected = 1;
 
     //Act 
