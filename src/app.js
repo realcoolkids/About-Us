@@ -1,4 +1,4 @@
-import quizScore from "./quizScore.js";
+import quizScore from './quizScore.js';
 const submitButton = document.getElementById('submit');
 
 
@@ -15,7 +15,7 @@ submitButton.addEventListener('click', () => {
 
     let score = 0;
     
-    let scoreEl = document.getElementById('score')
+    let scoreEl = document.getElementById('score');
     
     if(jacksAnswer.trim() === '' || denisesAnswer.trim() === '' || erinsAnswer.trim() === '' || leighAnnsAnswer.trim() === "") {
         scoreEl.textContent = 'Please fill out all options.';
