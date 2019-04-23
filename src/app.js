@@ -1,7 +1,6 @@
 import quizScore from './quizScore.js';
 const submitButton = document.getElementById('submit');
 
-
 const jacksInput = document.getElementById('jacks-favorite-thing');
 const denisesInput = document.getElementById('denises-favorite-thing');
 const erinsInput = document.getElementById('erins-favorite-thing');
@@ -32,4 +31,4 @@ submitButton.addEventListener('click', () => {
     
         scoreEl.textContent = 'Your score: ' + score;
     }
-}) 
+}); 
