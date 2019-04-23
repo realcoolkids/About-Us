@@ -47,3 +47,11 @@ span {
 .quiz-header {
     text-align: left;
 }
+
+.good {
+    color: blue;
+}
+
+.bad {
+    color: red;
+}
