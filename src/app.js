@@ -1,3 +1,4 @@
+import quizScore from "./quizScore.js"
 const submitButton = document.getElementById('submit');
 
 
@@ -12,5 +13,8 @@ submitButton.addEventListener("click",() => {
     const denisesAnswer = denisesInput.value;
     const erinsAnswer = erinsInput.value;
     const leighAnnsAnswer = leighAnnsInput.value;
-    console.log(jacksAnswer, denisesAnswer, erinsAnswer, leighAnnsAnswer)
+
+    const score = quizScore(jacksAnswer, denisesAnswer, erinsAnswer, leighAnnsAnswer);
+
+    console.log(jacksAnswer, denisesAnswer, erinsAnswer, leighAnnsAnswer, score)
 }) 
