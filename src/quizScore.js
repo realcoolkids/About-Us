@@ -6,19 +6,19 @@ function quizScore(jacksAnswer, denisesAnswer, erinsAnswer, leighAnnsAnswer) {
     erinsAnswer = erinsAnswer.toLowerCase();
     leighAnnsAnswer = leighAnnsAnswer.toLowerCase();
 
-    if(jacksAnswer === "waterskiing" || jacksAnswer === "lacrosse" || jacksAnswer === "hockey"){
+    if(jacksAnswer === 'waterskiing' || jacksAnswer === 'lacrosse' || jacksAnswer === 'hockey'){
         score++;
     }
 
-    if(denisesAnswer === "tacos" || denisesAnswer === "running" || denisesAnswer === "swimming"){
+    if(denisesAnswer === 'tacos' || denisesAnswer === 'running' || denisesAnswer === 'swimming'){
         score++;
     }
 
-    if(erinsAnswer === "poetry" || erinsAnswer === "traveling" || erinsAnswer === "nature"){
+    if(erinsAnswer === 'poetry' || erinsAnswer === 'traveling' || erinsAnswer === 'nature'){
         score++;
     }
 
-    if(leighAnnsAnswer === "eurovision" || leighAnnsAnswer === "puppies" || leighAnnsAnswer === "podcasts"){
+    if(leighAnnsAnswer === 'eurovision' || leighAnnsAnswer === 'puppies' || leighAnnsAnswer === 'podcasts'){
         score++;
     }
 
