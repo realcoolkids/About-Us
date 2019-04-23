@@ -16,5 +16,8 @@ submitButton.addEventListener("click",() => {
 
     const score = quizScore(jacksAnswer, denisesAnswer, erinsAnswer, leighAnnsAnswer);
 
-    console.log(jacksAnswer, denisesAnswer, erinsAnswer, leighAnnsAnswer, score)
+    let scoreEl = document.getElementById("score")
+    scoreEl.textContent = "Your score: " + score;
+
+    console.log(scoreEl)
 }) 
