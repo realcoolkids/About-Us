@@ -18,3 +18,40 @@ p {
 body {
     background-color: #a5a9b1;
 }
+
+label {
+    display: block; 
+    margin-bottom: 10px;
+}
+
+input{
+    display: block;
+    margin-bottom: 20px;
+    height: 20px;
+    width: 250px;
+    font-size: 1.1em;
+}
+
+#submit {
+    margin-bottom: 10px;
+    height: 30px;
+    width: 100px;
+    display: block; 
+}
+
+span {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.quiz-header {
+    text-align: left;
+}
+
+.good {
+    color: blue;
+}
+
+.bad {
+    color: red;
+}
